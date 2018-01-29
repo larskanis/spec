@@ -10,9 +10,7 @@ init:
       7z x C:\ruby_trunk.7z -oC:\ruby_trunk & C:\ruby_trunk\trunk_msys2.cmd)
 environment:
   matrix:
-    - RUBY_VERSION: 23-x64
     - RUBY_VERSION: 24-x64
-    - RUBY_VERSION: _trunk # So the folder name is ruby_trunk
 install:
   - git clone https://github.com/ruby/mspec.git ../mspec
 build: off
