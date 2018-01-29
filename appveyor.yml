@@ -16,7 +16,7 @@ install:
 build: off
 test_script:
   - SET CHECK_LEAKS=true
-  - ../mspec/bin/mspec -rdevkit -ff
+  - ../mspec/bin/mspec -rdevkit -ff security/cve_2011_4815_spec.rb
 on_finish:
   - ruby -v
 matrix:
